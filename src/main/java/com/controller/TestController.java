@@ -14,6 +14,7 @@ public class TestController {
 	public String msg() {
 		String str = LocalDateTime.now()
 				.format(DateTimeFormatter.ofPattern("EEEE, dd-MMMM,yyyy HH:mm:ss:SSS a"));
+		System.out.println("hello world.");
 		return "hello world :: " + str;
 	}
 
